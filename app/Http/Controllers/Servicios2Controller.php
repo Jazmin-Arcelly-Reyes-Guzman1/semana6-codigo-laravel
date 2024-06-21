@@ -45,11 +45,10 @@ class Servicios2Controller extends Controller
          ]);
          Servicio::create($camposv);
          return redirect()->route('servicios');
-
         Tercer metodo
+        */
         Servicio::create($request->validated());
         return redirect()->route('servicios')->with('success', 'Service created successfully!');
-        */
     }
 
     /**
